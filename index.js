@@ -20,12 +20,12 @@ app.use(express.static(path.join(__dirname, "images")));
 app.get("/", (req, res) => res.send("Hello Server!"));
 
 app.get("/images", async (req, res) => {
-  console.log("444");
-  const a = await encodeAllImages();
-  console.log("9999");
-  console.log(a);
-  console.log("9999");
-  // const a = require("./db.json");
+  // console.log("444");
+  // const a = await encodeAllImages();
+  // console.log("9999");
+  // console.log(a);
+  // console.log("9999");
+  const a = require("./db.json");
   res.send(a);
 });
 
